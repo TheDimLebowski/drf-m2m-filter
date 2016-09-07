@@ -1,5 +1,9 @@
 # Django-Rest-Framework many-to-many filtering test app
 
+Trying to solve 
+
+http://stackoverflow.com/questions/39368410/django-rest-framework-manytomany-filter-multiple-values/39368843#39368843
+
 ## Run:
 
 ```
