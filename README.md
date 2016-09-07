@@ -1,12 +1,14 @@
-# Django-rest-framework many-to-many filtering test app
+# Django-Rest-Framework many-to-many filtering test app
 
 ## Run:
 
-`pip install -r requirements.txt`
-`createdb test`
-`python manage.py migrate`
-`python insert_data.py`
-`python manage.py runserver`
+```
+pip install -r requirements.txt
+createdb test
+python manage.py migrate
+python insert_data.py
+python manage.py runserver
+```
 
 ## Go to:
 
