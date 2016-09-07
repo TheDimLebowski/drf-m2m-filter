@@ -10,5 +10,9 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     filter_backends = (filters.DjangoFilterBackend,)
-    filter_class = UserFilter
-    filter_fields = ('labels',)
+    def get_queryset(self):
+        queryset = User.objects.all()
+        labels = eval(self.request.query_params.get('labels', []))
+        for label in labels:
+            queryset = queryset.filter(labels__in=[label])
+        return queryset

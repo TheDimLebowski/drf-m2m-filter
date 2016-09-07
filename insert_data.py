@@ -14,7 +14,7 @@ labels = {1:'a',
           6:'f',
           7:'g',
           8:'h'}
-          
+
 for name in labels.values():
     Label.objects.create(name = name)
 
